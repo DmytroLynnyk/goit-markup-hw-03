@@ -142,14 +142,42 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
 
-  /* Del after */
-  border: 3px solid green;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Hedder */
 header {
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: inline-flex;
+  gap: 76px;
+}
+
+.nav {
+  display: inline-flex;
+  gap: 40px;
 }
 
 .logo {
@@ -188,6 +216,12 @@ header {
   color: var(--ocean);
 }
 
+.contacts-list {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .contacts-item {
   color: var(--slate);
 }
@@ -214,15 +248,49 @@ header {
 .list-item {
   color: var(--navyblue);
 }
+
+/* Section 2 */
+
+.feature-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: space-between;
+}
+
 .feature-desc {
   color: var(--slate);
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+/* Section 3 */
+
+.wawd {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: space-between;
 }
 
 .wawd-titel {
   color: var(--grey);
   text-align: center;
   columns: var(--navyblue);
+  padding-bottom: 72px;
 }
+
+/* Section 4 */
 
 .team {
   background-color: var(--cloud);
