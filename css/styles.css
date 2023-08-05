@@ -13,8 +13,7 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol {
+ul {
   margin: 0;
   padding-left: 0;
 }
@@ -87,7 +86,7 @@ button {
   letter-spacing: 0.02em;
 }
 
-.body {
+.body-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -234,16 +233,24 @@ nav {
 }
 
 /* Footer */
-.footer {
+
+footer {
   background-color: var(--navyblue);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 17.5px;
+  padding: 100px 0;
 }
 .footer-desc {
   color: var(--cloud);
+  width: 264px;
 }
 
 /* Studio */
 .hero {
-  height: 600px;
   background-color: var(--navyblue);
   color: var(--white);
   text-align: center;
@@ -262,6 +269,11 @@ nav {
 
 .hero .header-1 {
   width: 496px;
+  margin-top: 188px;
+}
+
+.hero .button-text {
+  margin-bottom: 188px;
 }
 
 .list-item {
@@ -298,6 +310,10 @@ nav {
 /* Section 3 */
 
 .wawd {
+  margin-bottom: 120px;
+}
+
+.wawd-list {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -319,13 +335,46 @@ nav {
   background-color: var(--cloud);
 }
 
-.team-list {
+.team .container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  justify-content: space-evenly;
+  padding: 120px 0;
+}
+
+.team-title {
   text-align: center;
   color: var(--grey);
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: space-between;
+}
+
 .team-item {
   background-color: var(--white);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.card-cont {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 32px;
 }
 
 .team-desc {

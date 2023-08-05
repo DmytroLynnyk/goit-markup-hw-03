@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -27,7 +28,7 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-studio-b">Studio</span></a
           >
-          <ul class=" nav list body-medium">
+          <ul class="nav list body-medium">
             <li>
               <a href="./index.html" class="nav-item link">Studio</a>
             </li>
@@ -39,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contacts body link">
+        <address class="contacts body-text link">
           <ul class="contacts-list">
             <li>
               <a class="contacts-item link" href="mailto:info@devstudio.com"
@@ -53,14 +54,16 @@
             </li>
           </ul>
         </address>
-      </div class="container">
+      </div>
     </header>
-    <!-- Main body -->
+    <!-- Main -->
     <main>
       <!-- Section 1 -->
       <section class="hero">
         <div class="container">
-          <h1 class="header-1">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title header-1">
+            Effective Solutions for Your Business
+          </h1>
           <button class="button-text" type="button">Order Service</button>
         </div>
       </section>
@@ -68,34 +71,32 @@
       <!-- Section 2 -->
       <section class="features">
         <div class="container">
-          <h2 class="visually-hidden">
-            Our features
-          </h2>
+          <h2 class="visually-hidden">Our features</h2>
           <ul class="feature-list list">
             <li class="feature-item">
               <h3 class="list-item header-3">Strategy</h3>
-              <p class="feature-desc body">
-                Our goal is to identify the business problem to walk away with the
-                perfect and creative solution.
+              <p class="feature-desc body-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
             <li class="feature-item">
               <h3 class="list-item header-3">Punctuality</h3>
-              <p class="feature-desc body">
+              <p class="feature-desc body-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
             <li class="feature-item">
               <h3 class="list-item header-3">Diligence</h3>
-              <p class="feature-desc body">
+              <p class="feature-desc body-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
             <li class="feature-item">
               <h3 class="list-item header-3">Technologies</h3>
-              <p class="feature-desc body">
+              <p class="feature-desc body-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -105,18 +106,30 @@
       </section>
 
       <!-- Section 3 -->
-      <section>
+      <section class="wawd">
         <div class="container">
           <h2 class="wawd-titel header-2">What are we doing</h2>
-          <ul class="wawd list">
+          <ul class="wawd-list list">
             <li>
-              <img src="./images/wawd1.jpg" alt="What are we doing" width="360" />
+              <img
+                src="./images/wawd1.jpg"
+                alt="What are we doing"
+                width="360"
+              />
             </li>
             <li>
-              <img src="./images/wawd2.jpg" alt="What are we doing" width="360" />
+              <img
+                src="./images/wawd2.jpg"
+                alt="What are we doing"
+                width="360"
+              />
             </li>
             <li>
-              <img src="./images/wawd3.jpg" alt="What are we doing" width="360" />
+              <img
+                src="./images/wawd3.jpg"
+                alt="What are we doing"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -125,41 +138,49 @@
       <!-- Section 4 -->
       <section class="team">
         <div class="container">
-          <h2 class="team-list header-2">Our Team</h2>
-          <ul class="list">
-            <li class="team-item ">
+          <h2 class="team-title header-2">Our Team</h2>
+          <ul class="team-list list">
+            <li class="team-item">
               <img src="./images/team1.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="list-item">Mark Guerrero</h3>
-              <p class="team-desc body">Product Designer</p>
+              <div class="card-cont">
+                <h3 class="list-item">Mark Guerrero</h3>
+                <p class="team-desc body-text">Product Designer</p>
+              </div>
             </li>
-            <li class="team-item ">
+            <li class="team-item">
               <img src="./images/team2.jpg" alt="Tom Ford" width="264" />
-              <h3 class="list-item">Tom Ford</h3>
-              <p class="team-desc body">Frontend Developer</p>
+              <div class="card-cont">
+                <h3 class="list-item">Tom Ford</h3>
+                <p class="team-desc body-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-item ">
+            <li class="team-item">
               <img src="./images/team3.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="list-item">Camila Garcia</h3>
-              <p class="team-desc body">Marketing</p>
+              <div class="card-cont">
+                <h3 class="list-item">Camila Garcia</h3>
+                <p class="team-desc body-text">Marketing</p>
+              </div>
             </li>
-            <li class="team-item ">
+            <li class="team-item">
               <img src="./images/team4.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="list-item">Daniel Wilson</h3>
-              <p class="team-desc body">UI Designer</p>
+              <div class="card-cont">
+                <h3 class="list-item">Daniel Wilson</h3>
+                <p class="team-desc body-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
+    <footer>
+      <div class="footer container">
         <a class="logo link" href="./index.html"
           >Web<span class="logo-studio-w">Studio</span></a
         >
-        <p class="footer-desc body">
-          Increase the flow of customers and sales for your business with digital
-          marketing & growth solutions.
+        <p class="footer-desc body-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
         </p>
       </div>
     </footer>
