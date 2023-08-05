@@ -215,6 +215,7 @@ header {
 .contacts {
   font-style: normal;
   color: var(--slate);
+  padding: 24px 0;
 }
 .contacts:hover,
 .contacts:focus {
@@ -225,7 +226,6 @@ header {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .contacts-item {
@@ -262,6 +262,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 188px 0;
 }
 
 .hero .container {
@@ -271,13 +272,12 @@ footer {
   align-items: center;
 }
 
-.hero .header-1 {
-  width: 496px;
-  margin-top: 188px;
+.hero-title {
+  max-width: 496px;
 }
 
 .hero .button-text {
-  margin-bottom: 188px;
+  min-width: 169px;
 }
 
 .list-item {
@@ -287,7 +287,7 @@ footer {
 /* Section 2 */
 
 .features {
-  margin-bottom: 120px;
+  padding: 120px 0;
 }
 
 .feature-list {
@@ -307,14 +307,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  /* gap: 8px; */
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.feature-name {
+  margin-bottom: 8px;
 }
 
 /* Section 3 */
 
 .wawd {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .wawd-list {
@@ -330,19 +334,24 @@ footer {
   color: var(--grey);
   text-align: center;
   columns: var(--navyblue);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+
+.wawd-item {
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 /* Section 4 */
 
 .team {
   background-color: var(--cloud);
+  padding: 120px 0;
 }
 
 .team .container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  /* gap: 72px; */
   justify-content: space-evenly;
   padding: 120px 0;
 }
@@ -350,6 +359,7 @@ footer {
 .team-title {
   text-align: center;
   color: var(--grey);
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -368,7 +378,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  /* gap: 32px; */
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-cont {
@@ -377,12 +389,18 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding-bottom: 32px;
+  /* gap: 8px; */
+  padding: 32px 0;
+}
+
+.cont-name {
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-desc {
   color: var(--slate);
+  text-align: center;
 }
 
 /* Portfolio */
