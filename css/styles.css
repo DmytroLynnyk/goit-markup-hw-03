@@ -64,14 +64,14 @@ button {
 }
 
 /* Typography */
-.header-1 {
+.header-one {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
 
-.header-2 {
+.header-two {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -79,7 +79,7 @@ button {
   letter-spacing: 0.02em;
 }
 
-.header-3 {
+.header-three {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -194,6 +194,8 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 76px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-studio-b {
@@ -206,6 +208,7 @@ header {
 
 .nav-item {
   color: var(--navyblue);
+  padding: 24px 0;
 }
 .nav-item:hover,
 .nav-item:focus {
@@ -238,15 +241,12 @@ header {
 
 /* Footer */
 
-footer {
-  background-color: var(--navyblue);
-}
-
 .footer {
   display: flex;
   flex-direction: column;
   gap: 17.5px;
   padding: 100px 0;
+  background-color: var(--navyblue);
 }
 .footer-desc {
   color: var(--cloud);
