@@ -405,6 +405,10 @@ header {
 
 /* Portfolio */
 
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -417,14 +421,17 @@ header {
 .felter-item {
   color: var(--iris);
   background-color: var(--cloud);
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
 }
 
 .felter-item:hover,
 .felter-item:focus {
   color: var(--white);
+  border: 1px solid transparent;
 }
 
-.portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -435,7 +442,7 @@ header {
 }
 
 .portf-item {
-  flex-basis: calc((100% - 56px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
   color: var(--grey);
   border: 1px solid var(--cornflower);
 }
@@ -444,16 +451,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
-  padding-bottom: 32px;
+  /* gap: 32px; */
+  /* padding-bottom: 32px; */
 }
 
 .portf-info {
   display: flex;
-
   flex-direction: column;
   gap: 8px;
-  padding: 0px 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+}
+
+.portf-name {
+  margin-bottom: 8px;
 }
 
 .portf-desc {
