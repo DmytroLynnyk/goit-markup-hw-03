@@ -405,25 +405,34 @@ footer {
 
 .portfolio {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: row;
+  justify-content: flex-start;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin-bottom: 120px;
 }
 
-.portfolio li {
-  display: flex;
-  flex-direction: column;
+.portf-item {
   flex-basis: calc((100% - 56px) / 3);
   color: var(--grey);
   border: 1px solid var(--cornflower);
 }
 
-.portf-item {
+.portf-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32;
+  gap: 32px;
+  padding-bottom: 32px;
+}
+
+.portf-info {
+  display: flex;
+
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 16px;
 }
 
 .portf-desc {
