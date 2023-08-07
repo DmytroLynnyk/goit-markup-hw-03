@@ -29,7 +29,6 @@ img {
 }
 
 button {
-  font-family: inherit;
   border: none;
   cursor: pointer;
   padding: 16px 32px;
@@ -115,8 +114,6 @@ button {
   color: var(--white);
   background-color: var(--iris);
   text-align: center;
-  font-family: inherit;
-  cursor: pointer;
 }
 .button-text:hover,
 .button-text:focus {
@@ -257,26 +254,17 @@ header {
 .hero {
   background-color: var(--navyblue);
   color: var(--white);
-  text-align: center;
-  margin-bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   padding: 188px 0;
-}
-
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  align-items: center;
+  text-align: center;
 }
 
 .hero-title {
   max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
-.hero .button-text {
+.hero-button {
   min-width: 169px;
 }
 
@@ -292,11 +280,7 @@ header {
 
 .feature-list {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 24px;
-  justify-content: space-between;
 }
 
 .feature-desc {
@@ -304,15 +288,11 @@ header {
 }
 
 .feature-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* gap: 8px; */
   flex-basis: calc((100% - 72px) / 4);
 }
 
 .feature-name {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 /* Section 3 */
@@ -323,18 +303,13 @@ header {
 
 .wawd-list {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: flex-start;
   gap: 24px;
-  justify-content: space-between;
 }
 
 .wawd-titel {
   color: var(--grey);
   text-align: center;
-  columns: var(--navyblue);
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .wawd-item {
@@ -345,7 +320,6 @@ header {
 
 .team {
   background-color: var(--cloud);
-  padding: 120px 0;
 }
 
 .team .container {
@@ -359,7 +333,7 @@ header {
 .team-title {
   text-align: center;
   color: var(--grey);
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .team-list {
