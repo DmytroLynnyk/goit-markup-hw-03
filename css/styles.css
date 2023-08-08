@@ -193,7 +193,8 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 24px 76px 24px 0;
+  padding: 24px 0;
+  margin: 0 76px 0 0;
   display: inline-block;
 }
 
@@ -242,7 +243,7 @@ header {
 }
 
 .footer .logo {
-  padding: 0 0 18px 0;
+  margin: 0 0 16px 0;
 }
 
 .logo-studio-w {
@@ -263,13 +264,15 @@ header {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin: 0 auto;
   padding: 0 0 48px 0;
 }
 
 .hero-button {
   min-width: 169px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Section 2 */
@@ -293,7 +296,7 @@ header {
 
 .feature-name {
   color: var(--navyblue);
-  padding: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
 
 /* Section 3 */
@@ -310,7 +313,7 @@ header {
 .wawd-titel {
   color: var(--grey);
   text-align: center;
-  padding: 0 0 72px 0;
+  margin: 0 0 72px 0;
 }
 
 .wawd-item {
@@ -327,7 +330,7 @@ header {
 .team-title {
   text-align: center;
   color: var(--grey);
-  padding: 0 0 72px 0;
+  margin: 0 0 72px 0;
 }
 
 .team-list {
@@ -349,7 +352,7 @@ header {
 }
 
 .cont-name {
-  padding: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
 
 .team-desc {
@@ -358,11 +361,15 @@ header {
 
 /* Portfolio */
 
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
 .filter {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding: 96px 0 72px 0;
+  margin: 0px 0 72px 0;
 }
 
 .felter-item {
@@ -383,7 +390,6 @@ header {
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-  padding: 0 0 120px 0;
 }
 
 .portf-item {
@@ -399,7 +405,7 @@ header {
 
 .portf-name {
   color: var(--navyblue);
-  padding: 0 0 8px 0;
+  margin: 0 0 8px 0;
 }
 
 .portf-desc {
